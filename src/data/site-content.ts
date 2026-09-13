@@ -116,9 +116,69 @@ export const strengths = [
 export const leadership: LeadershipProfile[] = [
   {
     name: "Sahil Raj Malla",
-    role: "Founder",
+    role: "Founder & CEO",
     bio: "Sahil Raj Malla founded Good As Gold Cyber Technologies Inc. with a focus on practical innovation, secure engineering, and technology that creates lasting business value.",
     initials: "SRM",
+  },
+  {
+    name: "Bigyan Pandey",
+    role: "Chief Technology Officer",
+    bio: "Bigyan leads the technology vision, architecture, and engineering foundations that turn ambitious ideas into secure, scalable products.",
+    initials: "BP",
+  },
+  {
+    name: "Olivia Bennett",
+    role: "Chief Marketing Officer",
+    bio: "Olivia shapes the company narrative and market strategy, connecting Good As Gold's capabilities with the organizations they are built to serve.",
+    initials: "OB",
+  },
+  {
+    name: "Marcus Reynolds",
+    role: "VP of Engineering",
+    bio: "Marcus guides engineering delivery and team excellence across the systems and platforms that power client outcomes.",
+    initials: "MR",
+  },
+  {
+    name: "Sophia Mitchell",
+    role: "Head of Product",
+    bio: "Sophia leads product direction and discovery, turning customer needs into focused, useful, and measurable digital experiences.",
+    initials: "SM",
+  },
+  {
+    name: "Daniel Brooks",
+    role: "Director of Cybersecurity",
+    bio: "Daniel oversees security strategy and risk-minded delivery, helping make resilience a foundation of every technology decision.",
+    initials: "DB",
+  },
+  {
+    name: "Lauren Hayes",
+    role: "VP of Business Development",
+    bio: "Lauren builds strategic relationships and growth opportunities that connect clients with the right technology capabilities.",
+    initials: "LH",
+  },
+  {
+    name: "Ryan Foster",
+    role: "Head of AI & Machine Learning",
+    bio: "Ryan leads the development of practical AI and machine learning solutions that create intelligent, responsible business value.",
+    initials: "RF",
+  },
+  {
+    name: "Natalie Carter",
+    role: "Director of Operations",
+    bio: "Natalie strengthens the operating systems, processes, and collaboration practices that keep delivery consistent and effective.",
+    initials: "NC",
+  },
+  {
+    name: "Tal Shamir",
+    role: "Director of Data & Analytics",
+    bio: "Tal helps organizations turn complex information into clear insight through thoughtful data platforms, analytics, and measurement.",
+    initials: "TS",
+  },
+  {
+    name: "Ronen Adler",
+    role: "Head of Strategic Partnerships",
+    bio: "Ronen develops long-term partnerships that expand capability, create shared opportunity, and support durable client success.",
+    initials: "RA",
   },
 ];
 
