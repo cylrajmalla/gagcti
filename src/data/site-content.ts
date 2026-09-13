@@ -31,9 +31,18 @@ export type Industry = {
   icon: LucideIcon;
 };
 
+export type LeadershipProfile = {
+  name: string;
+  role: string;
+  bio: string;
+  initials: string;
+  photo?: string;
+};
+
 export const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Leadership", href: "/leadership" },
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
   { label: "Global Presence", href: "/global-presence" },
@@ -102,6 +111,15 @@ export const strengths = [
   "Security by design",
   "Scalable architecture",
   "Long-term partnerships",
+];
+
+export const leadership: LeadershipProfile[] = [
+  {
+    name: "Sahil Raj Malla",
+    role: "Founder",
+    bio: "Sahil Raj Malla founded Good As Gold Cyber Technologies Inc. with a focus on practical innovation, secure engineering, and technology that creates lasting business value.",
+    initials: "SRM",
+  },
 ];
 
 export const aiCapabilities = [
