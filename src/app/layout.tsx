@@ -17,6 +17,9 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://goodasgoldtech.com"),
+  icons: {
+    icon: "/icon.svg",
+  },
   title: {
     default: "Good As Gold Cyber Technologies Inc. | AI, Cybersecurity & Software",
     template: "%s | Good As Gold Cyber Technologies Inc.",

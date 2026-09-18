@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Good As Gold Cyber Technologies</title>
+  <desc id="desc">A gold cyber shield with a circuit-inspired G mark.</desc>
+  <defs>
+    <linearGradient id="gold" x1="12" y1="8" x2="52" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f6d99d"/>
+      <stop offset="0.48" stop-color="#d7b57a"/>
+      <stop offset="1" stop-color="#a87932"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="10" y1="8" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#161b24"/>
+      <stop offset="1" stop-color="#06070a"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#panel)" stroke="url(#gold)" stroke-width="2.5" d="M32 3.75 55 13v17.1c0 14.2-9.08 25.46-23 30.15C20.08 55.56 9 44.3 9 30.1V13L32 3.75Z"/>
+  <path fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M42.5 23.5A11.5 11.5 0 1 0 43 37H33v-7h11v7"/>
+  <path fill="none" stroke="#f6d99d" stroke-linecap="round" stroke-width="2" d="M9 19H4m56 0h-5M12 37H6m52 0h-6M20 10l-3-4m30 4 3-4"/>
+  <circle cx="4" cy="19" r="1.7" fill="#f6d99d"/>
+  <circle cx="60" cy="19" r="1.7" fill="#f6d99d"/>
+  <circle cx="6" cy="37" r="1.7" fill="#f6d99d"/>
+  <circle cx="58" cy="37" r="1.7" fill="#f6d99d"/>
+</svg>
