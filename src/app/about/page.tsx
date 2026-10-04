@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Globe2, Network, Shield, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, Globe2, MapPin, Network, Shield, Sparkles } from "lucide-react";
 
 import { PageHeader } from "@/components/page-header";
 
@@ -41,32 +41,52 @@ export default function AboutPage() {
         description="Good As Gold Cyber Technologies Inc. combines technology expertise, strategic thinking, and global talent to help organizations build, modernize, secure, and scale their technology infrastructure."
       />
 
-      <div className="mt-14 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-        <div className="panel-surface rounded-[28px] border border-white/10 p-6">
-          <div className="flex h-[360px] items-center justify-center rounded-[22px] border border-white/10 bg-[radial-gradient(circle_at_center,_rgba(215,181,122,0.18),transparent_30%),linear-gradient(180deg,#111820,#0b0d12)]">
-            <div className="relative h-60 w-60 rounded-full border border-[#d7b57a]/40">
-              <div className="absolute inset-7 rounded-full border border-white/10" />
-              <div className="absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#d7b57a]/30" />
-              <div className="absolute left-[20%] top-[28%] h-2.5 w-2.5 rounded-full bg-[#f4d79b]" />
-              <div className="absolute right-[16%] top-[34%] h-2.5 w-2.5 rounded-full bg-[#f4d79b]" />
-              <div className="absolute left-[48%] top-[74%] h-2.5 w-2.5 rounded-full bg-[#f4d79b]" />
-              <div className="absolute left-[35%] top-[45%] h-px w-[32%] rotate-12 bg-gradient-to-r from-transparent via-[#d7b57a] to-transparent" />
-              <div className="absolute left-[18%] top-[58%] h-px w-[38%] -rotate-12 bg-gradient-to-r from-transparent via-[#d7b57a] to-transparent" />
-            </div>
-          </div>
-        </div>
+      <div className="mt-14 max-w-3xl space-y-5">
+        <p className="text-lg text-stone-200">
+          We help organizations turn ambitious digital strategies into practical results through secure architecture, modern software delivery, and meaningful business transformation.
+        </p>
+        <p className="text-stone-300">
+          From AI strategy and platform modernization to cybersecurity and custom engineering, we work as a strategic technology partner focused on sustainable growth and operational resilience.
+        </p>
+        <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-[#d7b57a] px-5 py-3 text-sm font-semibold text-[#0a0b0d]">
+          Start a Conversation <ArrowRight size={16} />
+        </Link>
+      </div>
 
-        <div className="space-y-5">
-          <p className="text-lg text-stone-200">
-            We help organizations turn ambitious digital strategies into practical results through secure architecture, modern software delivery, and meaningful business transformation.
-          </p>
-          <p className="text-stone-300">
-            From AI strategy and platform modernization to cybersecurity and custom engineering, we work as a strategic technology partner focused on sustainable growth and operational resilience.
-          </p>
-          <Link href="/contact" className="inline-flex items-center gap-2 rounded-full bg-[#d7b57a] px-5 py-3 text-sm font-semibold text-[#0a0b0d]">
-            Start a Conversation <ArrowRight size={16} />
-          </Link>
-        </div>
+      <div className="mt-12 grid gap-6 lg:grid-cols-2">
+        <section className="overflow-hidden rounded-[24px] border border-white/10 bg-[#090d12]">
+          <div className="p-6">
+            <div className="mb-3 flex items-center gap-2 text-[#f4d79b]">
+              <MapPin size={16} />
+              <span className="text-[10px] font-semibold uppercase tracking-[0.24em]">Nepal Office</span>
+            </div>
+            <h2 className="text-xl font-semibold text-white">Gyaneshwor, Kathmandu</h2>
+          </div>
+          <iframe
+            title="Good As Gold Cyber Tech Inc. Nepal office in Gyaneshwor, Kathmandu"
+            src={`https://gallimap.com/static/map.html?lat=27.709299804378418&lng=85.32909097152516&markerColor=%23d7b57a&markerLabel=${encodeURIComponent("Good As Gold Cyber Tech Inc. - Nepal Office")}&accessToken=${encodeURIComponent(process.env.NEXT_PUBLIC_GALLI_MAP_KEY ?? "")}`}
+            className="h-[320px] w-full border-0 sm:h-[360px]"
+            loading="lazy"
+            allowFullScreen
+          />
+        </section>
+
+        <section className="overflow-hidden rounded-[24px] border border-white/10 bg-[#090d12]">
+          <div className="p-6">
+            <div className="mb-3 flex items-center gap-2 text-[#f4d79b]">
+              <MapPin size={16} />
+              <span className="text-[10px] font-semibold uppercase tracking-[0.24em]">United States Headquarters</span>
+            </div>
+            <h2 className="text-xl font-semibold text-white">425 East 53rd Street, New York, NY 10022</h2>
+          </div>
+          <iframe
+            title="Good As Gold Cyber Tech Inc. United States headquarters at 425 East 53rd Street, New York"
+            src={`https://gallimap.com/static/map.html?lat=40.7554162&lng=-73.9634544&markerColor=%23d7b57a&markerLabel=${encodeURIComponent("Good As Gold Cyber Tech Inc. - United States Headquarters")}&accessToken=${encodeURIComponent(process.env.NEXT_PUBLIC_GALLI_MAP_KEY ?? "")}`}
+            className="h-[320px] w-full border-0 sm:h-[360px]"
+            loading="lazy"
+            allowFullScreen
+          />
+        </section>
       </div>
 
       <div className="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
